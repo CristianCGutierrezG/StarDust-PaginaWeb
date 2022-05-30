@@ -26,7 +26,6 @@ li {
 }
 
 .c-header {
-  /* background-color: aqua; */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(Stardust_LogoBase.png);
   max-width: 100%;
@@ -41,7 +40,6 @@ li {
 }
 
 .c-nav {
-  /* background-color: rgb(230, 131, 247); */
   color: white;
   max-width: 100%;
   height: 9%;
@@ -50,17 +48,17 @@ li {
 }
 
 .c-nav__logo {
-  /* background-color: rgb(14, 32, 90); */
   width: 120px;
   height: 100%;
   display: flex;
 }
+
 .c-nav__logo a {
   font-size: 13px;
   margin: auto;
 }
+
 .c-menu {
-  /* background-color: rgb(22, 49, 137); */
   width: 210px;
   height: 100%;
   display: flex;
@@ -69,6 +67,10 @@ li {
 .c-menu ul {
   margin: auto;
   margin-right: 28px;
+}
+
+.c-menu li:hover {
+  background: #787878;
 }
 
 .c-menu__link {
@@ -108,7 +110,7 @@ li {
 
 .c-titulo__text_is--small p {
   font-size: 13px;
-  padding: 5px 0;
+  padding: 10px 0;
 }
 
 .c-titulo__text_is--big {
@@ -130,7 +132,7 @@ li {
 
 .c-article {
   max-width: 100%;
-  height: 450px;
+  height: 500px;
   display: flex;
 }
 
@@ -152,13 +154,13 @@ li {
 .c-content__infoText {
   text-align: center;
   height: 90%;
-  margin: 8px 0;
+  margin: 8px 0px;
   display: grid;
   grid-template-rows: 2fr 1fr;
 }
 
 .c-content__infoText_is--big {
-  margin: auto;
+  padding: 0px 20px;
   font-size: 25px;
 }
 .c-content__infoText_is--small {
@@ -169,16 +171,21 @@ li {
 .c-content__products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  margin: 0px 30px;
   gap: 20px;
 }
 
 .c-card {
   display: grid;
-  grid-template-rows: 60% 40%;
+  grid-template-rows: 70% 30%;
+  gap: 10px;
 }
 
 .c-card__image {
+  max-width: 100%;
   background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
 }
 
 .c-card__infoText {
@@ -189,17 +196,145 @@ li {
 }
 
 .c-card__infoText_is--big {
-  font-size: 9px;
+  font-size: 11px;
   margin-bottom: 5px;
 }
 
 .c-card__infoText_is--small {
-  font-size: 10px;
+  font-size: 11px;
   padding: 0 15px;
   text-align: center;
 }
 
-@media screen and (min-width: 700px) {
-  .c-content__infoText {
+.c-footer {
+  background-color: #787878;
+  max-width: 100%;
+  height: 350px;
+  display: flex;
+}
+
+.c-footer__contentSpace {
+  width: 900px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.c-contentFoot {
+  width: 95%;
+  height: 85%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 29% 19% 19% 29%;
+  gap: 10px;
+}
+
+.c-contentFoot__info {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.c-contentInfo {
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+}
+
+.c-contentInfo li,
+p {
+  padding: 8px 0;
+}
+
+@media screen and (max-width: 700px) {
+  .c-titulo {
+    height: 250px;
+  }
+  .c-titulo__text_is--big {
+    display: flex;
+  }
+  .c-titulo__text_is--big p {
+    font-size: 26px;
+    padding: auto;
+  }
+
+  .c-content {
+    grid-template-rows: 20% 80%;
+    height: 90%;
+  }
+
+  .c-article {
+    max-width: 100%;
+    height: 800px;
+  }
+
+  .c-content__products {
+    grid-template-columns: 1fr;
+    grid-template-rows: (3, 1fr);
+    margin: 0px 10px;
+    gap: 10px;
+  }
+
+  .c-card {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 50% 50%;
+  }
+
+  .c-content__infoText_is--big {
+    padding: 0px 10px;
+    font-size: 22px;
+  }
+
+  .c-card__infoText_is--small {
+    font-size: 13px;
+    padding: 0 8px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .c-nav__logo {
+    width: 100px;
+  }
+
+  .c-nav__menu {
+    width: 65px;
+    height: 100%;
+    display: flex;
+  }
+
+  .c-nav__menu a {
+    font-size: 13px;
+    margin: auto;
+  }
+
+  .c-menu {
+    background-color: rgb(58, 58, 58);
+    width: 250px;
+    height: 120px;
+    display: flex;
+    right: 0;
+    margin: 0;
+    position: absolute;
+    top: 42px;
+    display: none;
+  }
+
+  .c-menu ul {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .c-menu__link {
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
   }
 }
