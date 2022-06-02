@@ -7,6 +7,7 @@
 body {
   font-family: sans-serif;
 }
+
 a {
   color: #ffffff;
   outline: none;
@@ -27,7 +28,7 @@ li {
 /* header styles */
 
 .c-header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(#00000080, #00000080),
     url(Stardust_LogoBase.png);
   max-width: 100%;
   height: 350px;
@@ -205,6 +206,10 @@ li {
 .c-card__infoText_is--big {
   font-size: 11px;
   margin-bottom: 5px;
+}
+
+.c-card__infoText_is--big:hover {
+  color: #0fca0f;
 }
 
 .c-card__infoText_is--small {

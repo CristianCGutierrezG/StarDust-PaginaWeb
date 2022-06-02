@@ -1,21 +1,3 @@
-// $(document).ready(main);
-
-// var contador = 0;
-
-// function main() {
-//   $(".c-nav__menu").click(function () {
-//     if (contador == 1) {
-//       $(".c-menu").animete({
-//         display: "none",
-//       });
-//       contador = 0;
-//     } else {
-//       ".c-menu".animete({
-//         display: "block",
-//       });
-//     }
-//   });
-// }
 const menuButton = document.querySelector(".c-nav__menu");
 const menuDiv = document.querySelector(".c-menu");
 
