@@ -10,53 +10,126 @@
   </head>
   <body>
     <header>
+      <!-- <div class="arrow"><img src="#" alt="" class="arrow-img" /></div>
+      <div class="arrow"><img src="#" alt="" class="arrow-img" /></div> -->
       <div class="c-header">
-        <div class="c-space"></div>
-        <nav class="c-nav">
-          <div class="c-nav__logo">
-            <a> STAR DUST</a>
-          </div>
-          <div class="c-nav__menu">
-            <a><span class="icon-menu"></span></a>
-          </div>
-          <div class="c-menu">
-            <ul>
-              <li class="c-menu__link isLight">
-                <a href="#">WORK</a>
-              </li>
-              <li class="c-menu__link">
-                <a href="#">ABOUT</a>
-              </li>
-              <li class="c-menu__link">
-                <a href="#">BLOG</a>
-              </li>
-              <li class="c-menu__link isButton">
-                <a
-                  href="https://www.linkedin.com/in/cristian-gutierrez-5aba6a240/"
-                  >HIRE US</a
-                >
-              </li>
-            </ul>
-          </div>
-        </nav>
-        <div class="c-infoHeader">
-          <div class="c-titulo">
-            <div class="c-titulo__text_is--small isLight">
-              <p>FOLLOW THE STAR</p>
+        <div class="c-carosel">
+          <div
+            class="c-carousel__content"
+            style="
+              background-image: linear-gradient(#00000080, #00000080),
+                url(Stardust_LogoBase.png);
+            "
+          >
+            <div class="c-infoHeader">
+              <div class="c-titulo">
+                <div class="c-titulo__text_is--small isLight">
+                  <p>FOLLOW THE STAR</p>
+                </div>
+                <div class="c-titulo__text_is--big">
+                  <p>
+                    "Que a partir de ahora todo lo que hagas sea con el objetivo
+                    de cumplir tu sueño"
+                  </p>
+                </div>
+                <div class="c-titulo__link">
+                  <a
+                    href="https://github.com/CristianCGutierrezG"
+                    class="isButton"
+                    >VIEW OUR WORK</a
+                  >
+                </div>
+              </div>
             </div>
-            <div class="c-titulo__text_is--big">
-              <p>
-                "Que a partir de ahora todo lo que hagas sea con el objetivo de
-                cumplir tu sueño"
-              </p>
+          </div>
+          <div
+            class="c-carousel__content"
+            style="
+              background-image: linear-gradient(#00000080, #00000080),
+                url(GuineaShooter.png);
+            "
+          >
+            <div class="c-infoHeader">
+              <div class="c-titulo">
+                <div class="c-titulo__text_is--small isLight">
+                  <p>FOLLOW THE STAR</p>
+                </div>
+                <div class="c-titulo__text_is--big">
+                  <p>
+                    Prueba nuestro juego con el estilo clasico del Bubble
+                    shooter
+                  </p>
+                </div>
+                <div class="c-titulo__link">
+                  <a
+                    href="https://github.com/CristianCGutierrezG"
+                    class="isButton"
+                    >TRY IT NOW</a
+                  >
+                </div>
+              </div>
             </div>
-            <div class="c-titulo__link">
-              <a href="https://github.com/CristianCGutierrezG" class="isButton"
-                >VIEW OUR WORK</a
-              >
+          </div>
+          <div
+            class="c-carousel__content"
+            style="
+              background-image: linear-gradient(#00000080, #00000080),
+                url(Stardust_LogoBase.png);
+            "
+          >
+            <div class="c-infoHeader">
+              <div class="c-titulo">
+                <div class="c-titulo__text_is--small isLight">
+                  <p>FOLLOW THE STAR</p>
+                </div>
+                <div class="c-titulo__text_is--big">
+                  <p>Visita nuestras redes sociales</p>
+                </div>
+                <div class="c-titulo__link">
+                  <a
+                    href="https://github.com/CristianCGutierrezG"
+                    class="isButton"
+                    >FOLLOW US</a
+                  >
+                </div>
+              </div>
             </div>
           </div>
         </div>
+      </div>
+      <nav class="c-nav">
+        <div class="c-nav__logo">
+          <a> STAR DUST</a>
+        </div>
+        <div class="c-nav__menu">
+          <a><span class="icon-menu"></span></a>
+        </div>
+        <div class="c-menu">
+          <ul>
+            <li class="c-menu__link isLight">
+              <a href="#">WORK</a>
+            </li>
+            <li class="c-menu__link">
+              <a href="#">ABOUT</a>
+            </li>
+            <li class="c-menu__link">
+              <a href="#">BLOG</a>
+            </li>
+            <li class="c-menu__link isButton">
+              <a
+                href="https://www.linkedin.com/in/cristian-gutierrez-5aba6a240/"
+                >HIRE US</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="c-carousel__list">
+        <ul class="points">
+          <li class="point"></li>
+          <li class="point"></li>
+          <li class="point"></li>
+        </ul>
       </div>
     </header>
     <article>
@@ -221,6 +294,7 @@
                     ></a>
                   </div>
                 </div>
+                <div class="mapGoogle"></div>
               </div>
             </div>
           </div>
@@ -228,5 +302,6 @@
       </div>
     </footer>
     <script src="app.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
   </body>
 </html>
